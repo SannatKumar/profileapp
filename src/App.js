@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { withAuthenticator, AmplifySignOut} from '@aws-amplify/ui-react';
 //import './Register_style.css';
 //import Index from './anindex';
 //import About from './About';
@@ -28,6 +29,8 @@ function AppRouter() {
           </ul>
         </nav>
         <Route path="./anindex"  />
+        <h1> We have authentication here.</h1>
+        <AmplifySignOut />
          </div>
     </Router>
   );
